@@ -17,6 +17,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
     "lite": "lite-server"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olulanke-Mainasara/My-Big-Project-The-Watcher-.git"
+  },
   "author": "",
   "license": "ISC",
   "description": ""
