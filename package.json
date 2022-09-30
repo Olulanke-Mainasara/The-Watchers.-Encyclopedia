@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
+    "bootstrap": "^3.4.1",
+    "bootstrap-social": "^5.1.1",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1"
+  },
+  "name": "the-watchers.-encyclopedia",
+  "version": "1.0.0",
+  "main": "HTML/index.html",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "lite": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

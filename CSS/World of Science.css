@@ -1,0 +1,313 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(80deg, #000, grey);
+	z-index: 0;
+}
+
+/*--------------------Header----------------------*/ 
+
+.jumbotron {
+	background: url("Images/World of Science 2.jpg");
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	margin: auto;
+}
+
+.jumbotron h1 {
+	color: black;
+	font-size: 12vw;
+	font-family: 'Times New Roman', Times, serif
+}
+
+/*--------------------Navigation----------------------*/ 
+
+.navbar {
+	background: black;
+	backdrop-filter: blur(20px);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
+
+.navbar-brand span {
+	font-size: 0.9em;
+	color: white;
+	transition: color .5s;
+}
+
+.navbar-brand:hover span{
+	color: gray;
+}
+
+.navbar-brand::after {
+	content: "";
+	height: 2px;
+	background-color: white;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: scaleX(0);
+
+	transition: transform 500ms ease;
+}
+
+.navbar-brand:hover::after {
+	transform: scaleX(1);
+}
+
+.imglink {
+	border-radius: 50%;
+}
+
+.navbar-nav {
+	margin-left: 40px;
+}
+
+.navbar-nav li {
+	font-size: 1em;
+	margin: 0 10px;
+	transition: background .5s;
+	border-radius: 5px;
+	position: relative;
+}
+
+.underlined::after {
+	content: "";
+	height: 2px;
+	background-color: white;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: scaleX(0);
+
+	transition: transform 500ms ease;
+}
+
+.underlined:hover::after {
+	transform: scaleX(1);
+}
+
+.searchfab {
+	margin: auto;
+}
+
+.searchbtn {
+	font-size: 0.9em;
+	color: white;
+	background: black;
+	border: 1px solid white;
+	margin-left: 5px;
+}
+
+.searchbtn:hover {
+	color: white;
+	background: linear-gradient(70deg, black, rgb(0, 238, 255));	border: 1px solid white;	border: 1px solid white;
+}
+
+.dropdown-menu {
+	background: rgba(146, 146, 146, 0.9);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-item {
+	color: white;
+	padding: 10px;
+	transition: background .5s;
+	margin: 10px 0;
+}
+
+.dropdown-item:hover {
+	background: black;
+	color: white;
+	border-radius: 5px;
+}
+
+/*--------------------News----------------------*/ 
+
+.NEWS {
+	margin: 60px auto 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.line1 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 40px
+}
+
+.actualnews {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	border: 1px solid grey;
+	margin: 0 auto 60px;
+	border-radius: 15px;
+	text-align: left;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	transition: transform 500ms ease;
+	overflow: hidden;
+	height: max-content;
+}
+
+.newsimg {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	border-radius: 15px;
+	transition: 0.5s;
+	opacity: 0.5;
+}
+
+.newstopic {
+	font-size: 2em;
+	color: white;
+	margin: 0 10px 20px;
+	font-weight: lighter;
+}
+
+.newsinfo {
+	color: white;
+	margin: 0 10px;
+	font-size: 0.9em;
+}
+
+.content {
+	padding-bottom: 20px;
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.actualnews:hover {
+	transform: scale(1.05);
+}
+
+.actualnews:hover .newsimg {
+	opacity: 1;
+}
+
+.actualnews:hover .content {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.NEWS a {
+	color: white;
+	text-decoration: none;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	transition: background .5s;
+}
+
+.NEWS a:hover {
+	background: black;
+	transition: background .5s;
+}
+
+/*--------------------Footer----------------------*/ 
+
+footer {
+	font-size: 0.9em;
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	border-top: 1px solid grey;
+	font-family: 'Poppins', sans-serif;
+}
+
+footer h3, footer p, hr {
+	color: white;
+}
+
+.list-unstyled {
+	list-style-type: circle;
+}
+
+.list-unstyled a, .col-auto, footer a {
+	color: white;
+	transition: background .5s;
+	text-decoration: none;
+}
+
+.list-unstyled a:hover, footer a:hover {
+	transition: color .5s;
+	color: black;
+}
+
+.links img {
+	width: 40px;
+	border-radius: 50%;
+	transition: background .5s;
+}
+
+.links img:hover {
+	background: black;
+	color: white;
+}
+
+.fa-envelope-o {
+	color: white;
+	transition: color 0.5s;
+}
+
+.fa-envelope-o:hover {
+	color: black;
+}
+
+.copyright i {
+	color: #ff004f;
+}
+
+.mainfooter {
+	padding-top: 20px;
+}
+
+/*--------------------For Mobile----------------------*/ 
+
+@media only screen and (max-width: 950px) {
+	.jumbotron {
+		background: url(Images/Portrait.jpg);
+		background-size: cover;
+	}
+
+	.jumbotron h1 {
+		font-size: 70px;
+	}
+
+	.jumbotron p {
+		font-size: 20px;
+	}
+
+	.navbar {
+		background: black;
+		z-index: 999;
+	}
+
+	.navbar-brand:hover span{
+		color: white;
+	}
+	
+	.navbar-brand:hover::after {
+		transform: scaleX(0);
+	}
+
+	.underlined:hover::after {
+		transform: scaleX(0);
+	}
+
+	.text-center {
+		margin: 10px auto;
+	}
+
+	.copyright {
+		margin-top: 10px;
+	}
+}

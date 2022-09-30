@@ -1,0 +1,527 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(80deg, black, rgba(0, 179, 255, 0.83));
+	z-index: 0;
+}
+
+/*--------------------Header----------------------*/ 
+
+.jumbotron {
+	background: url("Images/PCW6.jpeg");
+	background-size: cover;
+	height: 100vh;
+	text-align: left;
+	margin: auto;
+	justify-content: center;
+}
+
+.jumbotron h1 {
+	color: white;
+	font-size: 130px;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: bold;
+}
+
+.jumbotron p {
+	font-size: 30px;
+	color: white;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.bExplore {
+	font-size: 20px;
+	color: black;
+	background: white;
+	border: 1px solid white;
+	margin-left: 5px;
+	border-radius: 20px;
+	transition: background .5s;
+	
+}
+
+.bExplore:hover {
+	color: white;
+	background: linear-gradient(70deg, black, rgb(0, 238, 255));
+	border: 1px solid white;
+}
+
+/*--------------------Navigation----------------------*/ 
+
+.navbar {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(20px);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
+
+.navbar-brand span {
+	font-size: 0.9em;
+	color: white;
+	transition: color .5s;
+}
+
+.navbar-brand:hover span{
+	color: gray;
+}
+
+.navbar-brand::after {
+	content: "";
+	height: 2px;
+	background-color: white;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: scaleX(0);
+
+	transition: transform 500ms ease;
+}
+
+.navbar-brand:hover::after {
+	transform: scaleX(1);
+}
+
+.imglink {
+	border-radius: 50%;
+}
+
+.navbar-nav {
+	margin-left: 40px;
+}
+
+.navbar-nav li {
+	font-size: 1em;
+	margin: 0 10px;
+	transition: background .5s;
+	border-radius: 5px;
+	position: relative;
+}
+
+.underlined::after {
+	content: "";
+	height: 2px;
+	background-color: white;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: scaleX(0);
+
+	transition: transform 500ms ease;
+}
+
+.underlined:hover::after {
+	transform: scaleX(1);
+}
+
+.searchfab {
+	margin: auto;
+}
+
+.searchbtn {
+	font-size: 0.9em;
+	color: black;
+	background: white;
+	border: 1px solid white;
+	margin-left: 5px;
+	transition: background .5s;
+}
+
+.searchbtn:hover {
+	color: white;
+	background: linear-gradient(70deg, black, rgb(0, 238, 255));
+	border: 1px solid white;
+}
+
+.dropdown-menu {
+	background: rgba(146, 146, 146, 0.9);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-item {
+	color: white;
+	padding: 10px;
+	transition: background .5s;
+	margin: 10px 0;
+}
+
+.dropdown-item:hover {
+	background: steelblue;
+	color: white;
+	border-radius: 5px;
+}
+
+/*--------------------Main Body----------------------*/ 
+
+.mainbody {
+	margin: 0 auto;
+}
+
+.mainbody h1 {
+	color: white;
+	text-align: center;
+}
+
+/*--------------------Welcome section----------------------*/ 
+
+.wtabs {
+	margin: 100px auto;
+	justify-content: center;
+}
+
+.welcome {
+	margin: 20px 20px 20px;
+	padding: 20px 0;
+	border: 1px solid gray;
+	background: rgba(53, 36, 29, 0.328);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.speech p {
+	font-size: 0.9em;
+	color: white;
+	margin: 0 auto;
+	width: 60%;
+}
+
+/*--------------------Today's news carousel----------------------*/ 
+
+.todaynews {
+	background: rgba(255, 255, 255, 0.1);	
+	width: 100%;
+	border: 1px solid grey;
+	margin: 100px auto 80px;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.todaynews h1 {
+	padding: 20px 0;
+}
+
+.carousel-caption {
+  	color: white;
+  	font-size: 3.5vw;
+  	text-align: center;
+}
+
+.carousel-caption a {
+	color: white;
+	font-size: 0.3em;
+	padding: 10px;
+	border: 3px solid white;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.carousel-caption a:hover {
+	background: linear-gradient(70deg, black, rgb(0, 238, 255));
+}
+
+/*--------------------Categories----------------------*/ 
+
+.declaration {
+	font-size: 7vw;
+	margin-top: 100px;
+}
+
+.Categories, .Reviews {
+	overflow: hidden;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.innerinner {
+	overflow: scroll;	
+}
+
+.Categories h1 {
+	color: white;
+	text-align: left;
+	font-size: 2.5em;
+}
+
+.Categories p {
+	color: white;
+	text-align: left;
+}
+
+.option {
+	font-size: 0.9em;
+	background: rgba(53, 36, 29, 0.328);
+	padding: 40px 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	margin: 25px 15px 40px;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.option img {
+	width: 450px;
+	height: 280px;
+	border-radius: 5%;
+}
+
+.Explore {
+	color: white;
+	border-radius: 5px;
+	padding: 5px;
+	text-decoration: none;
+	border: 1px solid white
+}
+
+.Explore:hover {
+	color: white;
+	background: linear-gradient(70deg, black, rgb(0, 238, 255));
+}
+
+/*--------------------Offers----------------------*/ 
+
+.offer {
+	text-align: center;
+	padding: 50px;
+}
+
+.inneroffer {
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 100px;
+}
+
+.inneroffer i {
+	color: white;
+	font-size: 200px;
+	width: 300px;
+	height: 300px;
+	padding: 30px;
+	transition: transform 0.5s;
+}
+
+.offerimg {
+	position: relative;
+	margin: 0px auto;
+	border: 5px solid gray;
+	border-radius: 50px;	
+	background: rgba(53, 36, 29, 0.328);
+	backdrop-filter: blur(0px);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	transition: transform 0.5s;
+}
+
+.offerinfo {
+	color: white;
+	width: 100%;
+	height: 0;
+	background: linear-gradient(rgba(0,0,0,0.9), rgb(0, 238, 255));
+	border-radius: 50px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transform: scale(1.1);
+	transition: height 0.5s;
+}
+
+.offerimg:hover {
+	transform: scale(1.1);
+}
+
+.offerimg:hover .offerinfo {
+	height: 100%;
+}
+
+/*--------------------Reviews----------------------*/ 
+
+
+.Reviews h1, .Reviews p {
+	text-align: center;
+	color: white;
+}
+
+.review {
+	font-size: 0.9em;
+	background: rgba(53, 36, 29, 0.328);
+	padding: 40px 30px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	margin: 20px 15px 30px;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+
+.reviewW {
+	margin: auto;
+	border-radius: 50%;
+	height: 100px;
+	width: 120px;
+}
+
+/*--------------------Footer----------------------*/ 
+
+footer {
+	font-size: 0.9em;
+	background: rgba(255, 255, 255, 0.2);
+	font-family: 'Poppins', sans-serif;
+}
+
+footer h3, footer p, hr {
+	color: white;
+}
+
+.list-unstyled {
+	list-style-type: circle;
+}
+
+.list-unstyled a, address, .col-auto, footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.list-unstyled a:hover, footer a:hover {
+	transition: color .5s;
+	color: black;
+}
+
+.links img {
+	width: 40px;
+	border-radius: 50%;
+	transition: background .5s;
+}
+
+.links img:hover {
+	background: black;
+	color: white;
+}
+
+.fa-envelope-o {
+	color: white;
+	transition: color 0.5s;
+}
+
+.fa-envelope-o:hover {
+	color: black;
+}
+
+.copyright i {
+	color: #ff004f;
+}
+
+.mainfooter {
+	padding-top: 20px;
+}
+
+/*--------------------For Mobile----------------------*/ 
+
+@media only screen and (max-width: 800px) {
+	.jumbotron {
+		background: url(Images/Portrait.jpg);
+		background-size: cover;
+	}
+
+	.jumbotron h1 {
+		font-size: 80px;
+	}
+
+	.jumbotron p {
+		font-size: 20px;
+	}
+
+	.navbar {
+		background: black;
+		position: absolute;
+		z-index: 999;
+	}
+
+	.navbar-brand:hover span{
+		color: white;
+	}
+	
+	.navbar-brand:hover::after {
+		transform: scaleX(0);
+	}
+
+	.underlined:hover::after {
+		transform: scaleX(0);
+	}
+
+	.bExplore:hover {
+		color: black;
+		background: white;
+	}
+
+	.wtabs {
+		margin: 50px auto;
+		justify-content: center;
+	}
+
+	.todaynews {
+		margin: 50px auto 50px;
+	}
+
+	.declaration {
+		margin-top: 50px;
+	}
+
+	.bExplore {
+		font-size: 15px;
+	}
+
+	.welcome, .todaynews, .option, .review, footer {
+		background: rgba(53, 36, 29, 0.328);
+	}
+
+	.declaration {
+		font-size: 50px;
+	}
+
+	.Categories, .Reviews {
+		margin-top: 0px;
+	}
+
+	.offer {
+		padding: 20px 50px;
+	}
+
+	.inneroffer {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 100px;
+	}
+
+	.inneroffer i {
+		color: white;
+		font-size: 150px;
+		padding: 50px;
+	}
+
+	.offerimg {
+		transition: transform 0.5s;
+	}
+	
+	.offerinfo {
+		transition: height 0.5s;
+	}
+
+	.text-center {
+		margin: 10px auto;
+	}
+
+	.copyright {
+		margin-top: 10px;
+	}
+}

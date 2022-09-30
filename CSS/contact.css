@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: grey;
+    z-index: 0;
+}
+
+.jumbotron {
+    height: 50vh;
+    background: #9575CD;
+    background-size: cover;
+	text-align: center;
+	margin: auto;
+}
+
+.jumbotron h1 {
+	color: floralwhite;
+	font-size: 10vw;
+	font-family: 'Times New Roman', Times, serif
+}
+
+.jumbotron p {
+	font-size: 2vw;
+	color: floralwhite;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(20px);
+	position: sticky;
+	top: 0px;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.imglink {
+	border-radius: 50%;
+}
+
+.wordlink {
+	color: white;
+}
+
+.wordlink:hover {
+	transition: color .5s;
+	color: black;
+}
+
+.navbar-nav {
+	margin-left: 40px;
+}
+
+.navbar-nav li {
+	font-size: 20px;
+	margin: 0 10px;
+	transition: background .5s;
+	border-radius: 5px;
+}
+
+.navbar-nav li:hover {
+	background: #9575CD;
+	transition: background .5s;
+	color: white;
+}
+
+.searchfab {
+	margin: auto;
+}
+
+#searchbtn {
+	color: white;
+	background: #9575CD;
+	border: 1px solid floralwhite;
+	margin-left: 5px;
+}
+
+#searchbtn:hover {
+	color: white;
+	background: linear-gradient(80deg, #f00, rgb(0, 238, 255));
+	border: 1px solid floralwhite;
+}
+
+.dropdown-menu {
+	background: rgba(146, 146, 146, 0.9);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-item {
+	color: floralwhite;
+	padding: 10px;
+	transition: background .5s;
+	margin: 10px 0;
+}
+
+.dropdown-item:hover {
+	background: #9575CD;
+	color: floralwhite;
+	border-radius: 5px;
+}
+
+.mainbody {
+    margin: 50px auto;
+    color: floralwhite;
+}
+
+.row-content {
+    padding: 10px 0 50px;
+}
+
+.emaillink {
+    color: floralwhite;
+    text-decoration: none;
+}
+
+.emaillink:hover {
+    transition: color .5s;
+    color: black;
+}
+
+.location {
+    height: 60vh;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    color: floralwhite;
+}
+
+.subbtn {
+    background-color: #9575CD;
+    color: floralwhite;
+	border-radius: 10px;
+}
+
+.btn:hover {
+    color: #9575CD;
+    background-color: floralwhite;
+}
+
+footer {
+	background: rgba(149, 117, 205, 1);
+	backdrop-filter: blur(20px);
+	font-family: 'Poppins', sans-serif;
+}
+
+footer h3, footer p, hr {
+	color: floralwhite;
+}
+
+.list-unstyled {
+	list-style-type: circle;
+}
+
+.list-unstyled a, .col-auto, footer a {
+	color: floralwhite;
+	text-decoration: none;
+}
+
+.list-unstyled a:hover, footer a:hover {
+	transition: color .5s;
+	color: black;
+}
+
+.mainfooter {
+	padding-top: 20px;
+}

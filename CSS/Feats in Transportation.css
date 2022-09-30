@@ -1,0 +1,202 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(80deg, #000, rgb(255, 81, 0));
+	z-index: 0;
+}
+
+.jumbotron {
+	background: url("Images/Feats\ in\ Transportation\ 5.jpg");
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	margin: auto;
+}
+
+.jumbotron h1 {
+	color: white;
+	font-size: 9vw;
+	font-family: 'Times New Roman', Times, serif
+}
+
+.navbar {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	position: sticky;
+	top: 0px;
+	z-index: 10;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.imglink {
+	border-radius: 50%;
+}
+
+.wordlink {
+	color: white;
+}
+
+.wordlink:hover {
+	transition: color .5s;
+	color: black;
+}
+
+.navbar-toggler {
+	color: white;
+	border: 1px solid white;
+}
+
+.navbar-nav {
+	margin-left: 40px;
+}
+
+.navbar-nav li {
+	font-size: 20px;
+	margin: 0 10px;
+	transition: background .5s;
+	border-radius: 5px;
+}
+
+.navbar-nav li:hover {
+	background: grey;
+	transition: background .5s;
+}
+
+.searchfab {
+	margin: auto;
+}
+
+.searchbtn {
+	color: white;
+	background: grey;
+	border: 1px solid white;
+	margin-left: 5px;
+}
+
+.searchbtn:hover {
+	color: white;
+	background: linear-gradient(80deg, #f00, rgb(0, 238, 255));
+	border: 1px solid white;
+}
+
+.dropdown-menu {
+	background: rgba(146, 146, 146, 0.9);
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-item {
+	color: white;
+	padding: 10px;
+	transition: background .5s;
+	margin: 10px 0;
+}
+
+.dropdown-item:hover {
+	background: steelblue;
+	color: white;
+	border-radius: 5px;
+}
+
+.NEWS {
+	margin: 60px auto 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.actualnews {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	border: 1px solid grey;
+	margin-bottom: 60px;
+	border-radius: 15px;
+	height: 75vh;
+	text-align: left;
+	display: inline-block;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+}
+
+.newsimg {
+	position: relative;
+	width: 100%;
+	border-radius: 15px;
+	transition: 0.5s;
+	opacity: 0.5;
+}
+
+.newstopic {
+	color: white;
+	margin: 0 10px 20px;
+	font-weight: lighter;
+}
+
+.newsinfo {
+	color: white;
+	margin: 0 10px;
+}
+
+.content {
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.actualnews:hover {
+	transform: translateY(-20px);
+}
+
+.actualnews:hover .newsimg {
+	opacity: 1;
+}
+
+.actualnews:hover .content {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.NEWS a {
+	color: white;
+	text-decoration: none;
+	border: 3px solid grey;
+	border-radius: 5px;
+	padding: 5px;
+	transition: background .5s;
+}
+
+.NEWS a:hover {
+	background: grey;
+	transition: background .5s;
+}
+
+footer {
+	background: rgba(255, 255, 255, 0.2);
+	backdrop-filter: blur(20px);
+	border-top: 1px solid grey;
+	font-family: 'Poppins', sans-serif;
+}
+
+footer h3, footer p, hr {
+	color: white;
+}
+
+.list-unstyled {
+	list-style-type: circle;
+}
+
+.list-unstyled a, .col-auto, footer a {
+	color: white;
+	transition: background .5s;
+	text-decoration: none;
+}
+
+.list-unstyled a:hover, footer a:hover {
+	transition: color .5s;
+	color: black;
+}
+
+.mainfooter {
+	padding-top: 20px;
+}
