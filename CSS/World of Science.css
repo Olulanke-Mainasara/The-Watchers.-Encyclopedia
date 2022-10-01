@@ -287,7 +287,7 @@ footer h3, footer p, hr {
 	}
 
 	.navbar {
-		background: black;
+		background: none;
 		z-index: 999;
 	}
 

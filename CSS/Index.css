@@ -442,7 +442,7 @@ footer h3, footer p, hr {
 	}
 
 	.navbar {
-		background: black;
+		background: none;
 		position: absolute;
 		z-index: 999;
 	}

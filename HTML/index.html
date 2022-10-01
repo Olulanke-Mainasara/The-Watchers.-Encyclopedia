@@ -16,6 +16,8 @@
 	<script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<script src="/JS/script.js"></script>
 </head>
 
 <body>
@@ -23,8 +25,8 @@
 		<div class="container navstuffs">
 			<a href="index.html" class="navbar-brand"><img class="imglink" src="Images/The Universe 2.jpg" height="46" width="46"><span class="wordlink">The Watchers.</span></a>
 
-			<button class="navbar-toggler" id="togsbtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-				<span class="fa fa-list fa-lg"></span>
+			<button onclick="shownav()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+				<span id="togspan" class="fa fa-list fa-lg"></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbar">
@@ -32,7 +34,7 @@
 					<li class="nav-item"><a class="nav-link active underlined" href="index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
 
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+						<a onmouseover="showcatmenu()" id="dropcatmenu" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
 							<span class="fa fa-list fa-lg"></span> Our Categories
 						</a>
 
@@ -48,7 +50,7 @@
 					<li class="nav-item"><a class="nav-link underlined" href="Contact.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
 					
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+						<a onmouseover="showlogmenu()" id="droplogmenu" class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
 							<span class="fa fa-sign-in"></span> Login
 						</a>			
 
@@ -380,20 +382,5 @@
            </div>
         </div>
     </footer>
-
-	<script>
-		$(document).ready(function() {
-			$('#togsbtn').click(function() {
-                if ($('#togsbtn').children('span').hasClass('fa fa-list fa-lg')) {
-                    $('#togsbtn').children('span').removeClass('fa fa-list fa-lg');
-                    $('#togsbtn').children('span').addClass('fa fa-close fa-lg');
-                }
-                else if ($('#togsbtn').children('span').hasClass('fa fa-close fa-lg')) {
-                    $('#togsbtn').children('span').removeClass('fa fa-close fa-lg');
-                    $('#togsbtn').children('span').addClass('fa fa-list fa-lg');
-                }
-            });
-		})
-	</script>
 </body>
 </html>
