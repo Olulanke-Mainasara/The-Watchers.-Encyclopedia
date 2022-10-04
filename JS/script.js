@@ -13,8 +13,8 @@ function shownav() {
         togspan.removeAttribute("class", 'fa fa-list fa-lg');
         togspan.setAttribute("class", 'fa fa-close fa-lg');
     }
-
-    else {
+    else if (togspan.hasAttribute("class", 'fa fa-close fa-lg')) {
+        togspan.removeAttribute("class", 'fa fa-close fa-lg');
         togspan.setAttribute("class", 'fa fa-list fa-lg');
     }
 }
