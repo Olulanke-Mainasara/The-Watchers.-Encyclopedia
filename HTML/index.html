@@ -382,5 +382,20 @@
            </div>
         </div>
     </footer>
+
+	<script>
+		$(document).ready(function() {
+			$('#togsbtn').click(function() {
+                if ($('#togsbtn').children('span').hasClass('fa fa-list fa-lg')) {
+                    $('#togsbtn').children('span').removeClass('fa fa-list fa-lg');
+                    $('#togsbtn').children('span').addClass('fa fa-close fa-lg');
+                }
+                else if ($('#togsbtn').children('span').hasClass('fa fa-close fa-lg')) {
+                    $('#togsbtn').children('span').removeClass('fa fa-close fa-lg');
+                    $('#togsbtn').children('span').addClass('fa fa-list fa-lg');
+                }
+            });
+		})
+	</script>
 </body>
 </html>
